@@ -49,7 +49,8 @@ int main() {
 	while (money >= 0) {
 		tax = tax + 1;
 		if (locations >= 500 && employees >= 900) {
-			cout << "Congratulations " << company << " on becoming a successful enterprise!" << endl;
+			cout << "Congratulations " << company << " on becoming a successful enterprise! The Game will now exit." << endl;
+			this_thread::sleep_for(chrono:milliseconds(7000));
 			std::exit;
 			return EXIT_SUCCESS;
 		}
